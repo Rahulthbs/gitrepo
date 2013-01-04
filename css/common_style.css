@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {margin:0 auto;}
+body, html {height:100%; margin:0px;}
+body {font-family:verdana;
+background-color: #67bcf9;
+/* fallback image */
+background-image: url(images/radial_center.png);
+background-position: center center; background-repeat: no-repeat;
+/* Firefox 3.6+ */
+background: -moz-radial-gradient(circle, #67bcf9, #03406f);
+/* Safari 4-5, Chrome 1-9 */
+background: -webkit-gradient(radial, center center, 0, center center, 600, from(#67bcf9), to(#03406f));
+/* Safari 5.1+, Chrome 10+ */
+}
+
+#resolution {width:480px; height:800px; position:absolute; border:1px solid #000; 
+
+
+
+
+}
+
+/* loading page */
+#logo {height:25%; text-align:center; display:block;}
+#logo img {padding-top:110px; width:90%;}
+#loading_page {width:100%; height:75%; display:block;}
+#loading_img {text-align:center; height:35%}
+#loading_img img {padding-top:100px; width:80px;}
+.loading_txt {color:white; font-size:18px; font-weight:bold; letter-spacing:5px; text-align:center; height:35%; padding-top:150px;}
+
+
+@media only screen and (max-width:480px){
+	#logo img {width:90% !important;}
+	#loading_img img {width:20% !important;}
+}
